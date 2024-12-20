@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { saveAs } from 'file-saver';
+// import { saveAs } from 'file-saver';
+import { saveAs } from 'file-saver-es'
 
 @Component({
   selector: 'app-header',
@@ -39,7 +40,7 @@ export class HeaderComponent {
     fetch(pdfUrl)
       .then(response => response.blob())
       .then(blob => {
-        saveAs(blob, 'downloaded.pdf'); // You can specify the desired filename here
+        saveAs(blob, 'Ashik_Resume.pdf'); // You can specify the desired filename here
       })
       .catch(error => {
         console.error('Error downloading PDF:', error);

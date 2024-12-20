@@ -1,5 +1,5 @@
 <div class="bg-gray-100 w-full h-full flex justify-center items-center">
-    <form [formGroup]="fg" (ngSubmit)="onSubmit()" method="post" action=" ">
+    <form [formGroup]="fg" #emailForm="ngForm" id="emailForm" (ngSubmit)="sendEmail($event)" method="post" action=" ">
 
         <div class="flex flex-row bg-white rounded-lg drop-shadow-3xl w-full max-w-6xl p-10 gap-x-8">
             <div class="text-left mr-16 max-w-md">
@@ -37,20 +37,20 @@
             <div class="w-full max-w-md" data-aos="fade-left" data-aos-duration="700" data-aos-easing="linear">
                 <p>Or leave a message and I'll get back as soon as I can!</p>
                 <div class="flex flex-row gap-3 my-4">
-                    <input type="text" name="name" [formControl]="name_fc"
+                    <input type="text" name="name" formControlName="name_fc"
                         class="w-1/2 p-3 rounded-xl border-gray-300 bg-gray-200 placeholder-gray-500 focus:ring-2 focus:ring-gray-400 focus:outline-none"
                         placeholder="Name">
-                    <input type="text" name="email" [formControl]="email_fc"
+                    <input type="text" name="email" formControlName="email_fc"
                         class="w-1/2 p-3 rounded-xl border-gray-300 bg-gray-200 placeholder-gray-500 focus:ring-2 focus:ring-gray-400 focus:outline-none"
                         placeholder="Email">
                 </div>
 
                 <textarea class="w-full p-3 rounded-xl bg-gray-200 placeholder-gray-500 
-                     focus:outline-none focus:ring-2 focus:ring-gray-400" [formControl]="message_fc"
+                     focus:outline-none focus:ring-2 focus:ring-gray-400" formControlName="message_fc"
                     placeholder="Message" name="message" row="4">
-            </textarea>
+                </textarea>
 
-                <button
+                <button type="submit"
                     class="bg-red-800 text-white hover:bg-red-400 transition ease-in-out duration-100 p-2 w-full rounded-xl mt-3">Send</button>
 
             </div>
