@@ -19,7 +19,7 @@ import { provideHttpClient } from '@angular/common/http';
     SecondComponent,
     HeaderComponent,
     ContactComponent,
-    PicSliderComponent
+    PicSliderComponent,
   ],
   imports: [
     FormsModule,

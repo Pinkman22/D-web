@@ -30,9 +30,9 @@ export class HeaderComponent {
     this.router.navigate(['/contact'])
   }
 
-  // slider() {
-  //   this.router.navigate(['/slider'])
-  // }
+  togo5() {
+    this.router.navigate(['/test'])
+  }
 
   downloadPDF(): void {
     const pdfUrl = 'resume.pdf'; // Replace with the actual URL or path to your PDF
