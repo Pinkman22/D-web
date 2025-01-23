@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup,FormControl } from '@angular/forms';
+import { FormGroup, FormControl } from '@angular/forms';
 import { Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import emailjs from 'emailjs-com';
@@ -13,9 +13,9 @@ import emailjs from 'emailjs-com';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
-export class ContactComponent implements OnInit{
+export class ContactComponent implements OnInit {
 
-  constructor( private http: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   'fg': FormGroup;
   name_fc = new FormControl(null, Validators.required)
@@ -30,7 +30,7 @@ export class ContactComponent implements OnInit{
     });
   }
 
-  
+
 
   sendEmail(event: Event): void {
     event.preventDefault(); // Prevent default form submission
@@ -54,6 +54,19 @@ export class ContactComponent implements OnInit{
   }
 
 
+  sterio3() {
+    const audio = new Audio('bonus.mp3');
+    audio.play();
+  }
 
+  jump() {
+    const audio = new Audio('jump.mp3');
+    audio.play();
+  }
+
+  touch() {
+    const audio = new Audio('winning.mp3');
+    audio.play();
+  }
 
 }

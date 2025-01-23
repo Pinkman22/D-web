@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       dropShadow: {
-        '3xl': '0 0 10px rgba(210, 0, 0, 1)',  //rgba(35, 0, 255, 0.9)
+        '3xl': '0 0 15px rgba(35, 0, 255, 0.9)',  //rgba(210, 0, 0, 1)
         '4xl': [ '0 0 5px rgba(35, 0, 255, 0.9)',
                  '0 0 10px rgba(0, 173, 255, 0.9)',
                  '0 0 15px rgba(0, 255, 98, 0.9)',],
@@ -36,6 +36,8 @@ module.exports = {
 
       fontFamily: {
         robo: ['Ballet', 'cursive'],
+        joto: ['VT323'],
+        moto: ['Cinzel'],
       },
       // colors: {
       //   customSlate: '#b0bec5', // Example custom color

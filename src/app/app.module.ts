@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PicSliderComponent } from './pic-slider/pic-slider.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { provideHttpClient } from '@angular/common/http';
+import { RstarComponent } from './rstar/rstar.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { provideHttpClient } from '@angular/common/http';
     HeaderComponent,
     ContactComponent,
     PicSliderComponent,
+    RstarComponent,
   ],
   imports: [
     FormsModule,

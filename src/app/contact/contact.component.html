@@ -7,28 +7,28 @@
                     data-aos-duration="600" data-aos-easing="linear">Let's collaborate!</p>
                 <p class="leading-8 font-sans text-base text-gray-600" data-aos="fade-right" data-aos-duration="800"
                     data-aos-easing="linear">
-                    Connect with me today to discuss about design, development 
-                    or chat about Hiphop!. Let's collaborate on creating 
+                    Connect with me today to discuss about design, development
+                    or chat about Hiphop!. Let's collaborate on creating
                     impactful solutions together.</p> &nbsp;
                 <div class="flex flex-row justify-start gap-x-6" data-aos="fade-up" data-aos-duration="700"
                     data-aos-easing="ease-in-out">
 
                     <a href="https://mail.google.com/mail/?view=cm&to=ashikirfan2000@gmail.com"
                         title="Contact via Gmail" target="_blank">
-                        <img src="g.png" alt="Gmail" class="w-8 h-8">
+                        <img src="g.png" alt="Gmail" class="w-8 h-8 hover:scale-150 duration-300 ease-in-out" (mouseenter)="jump()">
                     </a>
                     <a href="https://api.whatsapp.com/send?phone=9500027370&text=Hello%20there!"
                         title="Contact via Whatsapp" target="_blank">
-                        <img src="w.png" alt="Whatsapp" class="w-8 h-8">
+                        <img src="w.png" alt="Whatsapp" class="w-8 h-8 hover:scale-150 duration-300 ease-in-out" (mouseenter)="jump()">
                     </a>
                     <a href="linkedin.com/in/ashik-irfan-west-coast22" title="Linkedin" target="_blank">
-                        <img src="l.png" alt="Linkedin" class="w-8 h-8">
+                        <img src="l.png" alt="Linkedin" class="w-8 h-8 hover:scale-150 duration-300 ease-in-out" (mouseenter)="jump()">
                     </a>
                     <a href="https://www.behance.net/ashii-west-coast22" title="Behance icon" target="_blank">
-                        <img src="b.png" alt="Behance" class="w-8 h-8">
+                        <img src="b.png" alt="Behance" class="w-8 h-8 hover:scale-150 duration-300 ease-in-out" (mouseenter)="jump()">
                     </a>
                     <a href="https://pin.it/2em6i9g0f" title="Pinterest icon" target="_blank">
-                        <img src="p.png" alt="Pinterest" class="w-8 h-8">
+                        <img src="p.png" alt="Pinterest" class="w-8 h-8 hover:scale-150 duration-300 ease-in-out" (mouseenter)="jump()">
                     </a>
 
                 </div>
@@ -39,19 +39,20 @@
                 <div class="flex flex-row gap-3 my-4">
                     <input type="text" name="name" formControlName="name_fc"
                         class="w-1/2 p-3 rounded-xl border-gray-300 bg-gray-200 placeholder-gray-500 focus:ring-2 focus:ring-gray-400 focus:outline-none"
-                        placeholder="Name">
+                        placeholder="Name" (click)="touch()">
                     <input type="text" name="email" formControlName="email_fc"
                         class="w-1/2 p-3 rounded-xl border-gray-300 bg-gray-200 placeholder-gray-500 focus:ring-2 focus:ring-gray-400 focus:outline-none"
-                        placeholder="Email">
+                        placeholder="Email" (click)="touch()">
                 </div>
 
                 <textarea class="w-full p-3 rounded-xl bg-gray-200 placeholder-gray-500 
                      focus:outline-none focus:ring-2 focus:ring-gray-400" formControlName="message_fc"
-                    placeholder="Message" name="message" row="4">
+                    placeholder="Message" name="message" row="4" (click)="touch()">
                 </textarea>
 
                 <button type="submit"
-                    class="bg-red-800 text-white hover:bg-red-600 transition ease-in-out duration-100 p-2 w-full rounded-xl mt-3">Send</button>
+                    class="bg-purple-950 text-white hover:bg-black hover:drop-shadow-4xl transition ease-in-out duration-100 p-2 w-full rounded-xl mt-3"
+                    (mouseenter)="jump()" (click)="sterio3()">Send</button>
 
             </div>
         </div>
