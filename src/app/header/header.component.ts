@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 // import { saveAs } from 'file-saver';
 import { saveAs } from 'file-saver-es'
@@ -10,16 +10,22 @@ import { saveAs } from 'file-saver-es'
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent implements OnInit{
+export class HeaderComponent implements OnInit {
 
-  showHeader: boolean = true;
+  hideheader: boolean = true;
+  hideheader2: boolean = true;
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.router.events.subscribe(() => {
-      this.showHeader = !this.router.url.startsWith('/ROCXSTAR');
+      this.hideheader = !this.router.url.startsWith('/ROCXSTAR');
     });
+
+    this.router.events.subscribe(() => {
+      this.hideheader2 = !this.router.url.startsWith('/projo');
+    });
+    
   }
 
   togo1() {

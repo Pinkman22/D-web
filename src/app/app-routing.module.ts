@@ -6,6 +6,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PicSliderComponent } from './pic-slider/pic-slider.component';
 import { enableDebugTools } from '@angular/platform-browser';
 import { RstarComponent } from './rstar/rstar.component';
+import { CoffeeComponent } from './PROJECTS/coffee/coffee.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -19,6 +20,9 @@ const routes: Routes = [
   { path: 'slider', component: PicSliderComponent},
 
   { path: 'ROCXSTAR',  component: RstarComponent},
+
+  { path: 'projo', component: CoffeeComponent},
+
   
 ];
 

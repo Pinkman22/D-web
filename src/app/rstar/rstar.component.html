@@ -1,13 +1,31 @@
 <div class="bg-black flex-row items-center py-10 px-6 grid place-items-center h-screen">
 
     <div class="bg-slate-950 p-4 rounded-lg w-2/4 border-2 border-orange-500 border-collapse">
-        <button class="hover:scale-150 ease-in-out duration-300" (click)="togo1(); sterio1()" (mouseenter)="jump()">
-            <img src="ninja.png" alt="Home" class="w-9 h-9 ">
-        </button>
-        <div class="font-joto text-5xl flex flex-col items-center text-white">
-            <p> About <span [ngClass]="{ 'text-orange-500': name === 'ROCXSTAR', 'text-white': name === 'ASHIK' }"
-                    (mouseenter)="changeName('ROCXSTAR')" (mouseleave)="changeName('ASHIK')" (mouseenter)="touch()"> {{ name }}</span></p>
+        <div class="flex flex-row justify-between my-2">
+            <button class="hover:scale-150 ease-in-out duration-300" (click)="togo1(); sterio1()" (mouseenter)="jump()">
+                <img src="ninja.png" alt="Home" class="w-9 h-9">
+            </button>
+
+            <div class="font-joto text-5xl flex flex-col items-center text-white">
+                <p> About <span [ngClass]="{ 'text-orange-500': name === 'ROCXSTAR', 'text-white': name === 'ASHIK' }"
+                        (mouseenter)="changeName('ROCXSTAR')" (mouseleave)="changeName('ASHIK')" (mouseenter)="touch()">
+                        {{
+                        name }}</span></p>
+            </div>
+
+            <!-- <a href="projo" target="_blank" class="hover:scale-125 ease-in-out duration-300"
+                (click)="sterio2()" (mouseenter)="jump()">
+                <img src="creat.png" alt="Projects" class="w-11 h-11">
+            </a> -->
+
+            <a [routerLink]="'/projo'" target="_blank" class="hover:scale-125 ease-in-out duration-300" (click)="sterio2()"
+                (mouseenter)="jump()">
+                <img src="creat.png" alt="Projects" class="w-11 h-11">
+            </a>
+
+
         </div>
+
 
         <div class="relative">
             <img src="mine1.jpeg" alt="Image" class="rounded-lg opacity-90 ">
@@ -28,6 +46,6 @@
         <img src="pause.png">
     </div> -->
 
-    
-    
+
+
 </div>

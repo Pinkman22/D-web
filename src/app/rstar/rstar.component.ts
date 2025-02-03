@@ -1,17 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-rstar',
   standalone: false,
-  
+
   templateUrl: './rstar.component.html',
   styleUrl: './rstar.component.scss'
 })
-export class RstarComponent {
+export class RstarComponent{
 
   constructor(private router: Router) { };
-  
 
   name: string = 'ASHIK';
 
@@ -22,8 +21,18 @@ export class RstarComponent {
   togo1() {
     this.router.navigate(['/home'])
   }
+
+  togo2() {
+    this.router.navigate(['/projo']);
+  }
+
   sterio1() {
     const audio = new Audio('game-spin.mp3');
+    audio.play();
+  }
+
+  sterio2() {
+    const audio = new Audio('whistle.mp3');
     audio.play();
   }
 
@@ -41,10 +50,10 @@ export class RstarComponent {
   //   const audio = document.getElementById('audioPlayer');
   //   Audio.play();
   // }
-  
+
   //  pauseAudio() {
   //   const audio = document.getElementById('audioPlayer');
   //   Audio.pause();
   // }
-  
+
 }
